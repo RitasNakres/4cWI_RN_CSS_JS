@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border-style: solid;
+            height: 100px;
+        }
+
+        .div1 {
+            background-color: chocolate;
+            position: relative;
+            /*Vom Ausgangspunkt, bezieht auf den Punkt wo das Element normalerweise stehen würde*/
+            top: 300px;
+            left: 0px;
+        }
+
+        .div2 {
+            background-color: royalblue;
+            position: absolute;
+            /*bezieht sich nicht auf den Punkt wo das Element normalerweise stehen würde
+            sondern bezieht sich auf den Vater-Container(in dem Fall Body)
+            verliert fähigkeit sich im body auszubreiten */
+            width: 40px;
+            bottom: 5px;
+        }
+
+        .div3 {
+            background-color: yellowgreen;
+            position: fixed;
+            /*bleibt an dem Ort picken wo man es hintut, wenn man scrollt kommt es mit bleibt am gleichen Ort*/
+            width: 100vw;
+            top: 0px;
+        }
+
+        .div4 {
+            background-color: orchid;
+            position: sticky;
+            /*wandert mit bleibt dann stecken wenn man nicht mehr scrollen kann*/
+            width: 100vw;
+            top: 20px;
+        }
+
+        .div5 {
+            background-color: red;
+            position: static;
+            /*ganz normal im fluss drinnen, untereinander wie sie sind*/
+            width: 100vw;
+            top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        one
+    </div>
+    <div class="div2">
+        two
+    </div>
+    <div class="div3">
+        three
+    </div>
+    <div class="div4">
+        four
+    </div>
+    <div class="div5">
+        five
+    </div>
+    <div>
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+    </div>
+</body>
+
+</html>

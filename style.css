@@ -1,20 +1,19 @@
+/* Element Selector  */
+div {
+    background-color: aqua;
+}
 
-        /* Element Selector  */
-        div {
-            background-color: aqua;
-        }
+/* id selector  */
+#header {
+    font-size: 2rem;
+}
 
-        /* id selector  */
-        #header {
-            font-size: 2rem;
-        }
+/* Klassen selector  */
 
-        /* Klassen selector  */
+.subtitle {
+    color: brown;
+}
 
-        .subtitle{
-            color: brown;
-        }
-
-        #text p {
-            background-color: blanchedalmond;
-        }
+#text p {
+    background-color: blanchedalmond;
+}
