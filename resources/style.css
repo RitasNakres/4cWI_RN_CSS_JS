@@ -1,0 +1,15 @@
+.menu{
+    list-style-type: none;
+    background-color: cadetblue;
+    padding: 8px;
+}
+
+.menu li{
+    display:inline;
+    padding: 15px;
+}
+
+.header{
+    background-color: burlywood;
+    padding: 15px;
+}
