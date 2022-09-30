@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        div {
+            height: 50px;
+            background-color: red;
+        }
+
+        .container1 {
+            width: 50%;
+            /*%- bezieht sich auf das Vaterelement, wo man drinnen ist - lokal*/
+        }
+
+        .container2 {
+            width: 50vw;
+            height: 50vw;
+            /*vw - immer konstant, 50% der gesamten Breite des gesamten Bildschirms - global*/
+            /*vh - immer konstant, 50% der gesamten höhe/länge des gesamten Bildschirms - global*/
+        }
+
+        .main {
+            background-color: greenyellow;
+            height: 150px;
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container1">
+            container 1
+        </div>
+        <div class="container2">
+            container 2
+        </div>
+    </div>
+</body>
+
+</html>
