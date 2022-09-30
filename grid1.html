@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /* Responsive Design, bedeutet das sich eine Webseite auf einen*/
         .box {
             background-color: red;
             padding: 10px;
@@ -14,11 +15,22 @@
 
         .container {
             display: grid;
-            grid-template-columns: 33% 33% 33%;
+            grid-template-columns: 100%;
             grid-auto-rows: minmax(100px, auto);
             /*besagt das die Zeilen mindestens 100px hoch sind, aber wenn mehr drinn ist darf auch mehr sein*/
             column-gap: 1px;
             row-gap: 1px;
+        }
+
+        @media (min-width: 600px) {
+            .container {
+                display: grid;
+                grid-template-columns: 33% 33% 33%;
+                grid-auto-rows: minmax(100px, auto);
+                /*besagt das die Zeilen mindestens 100px hoch sind, aber wenn mehr drinn ist darf auch mehr sein*/
+                column-gap: 2px;
+                row-gap: 2px;
+            }
         }
 
         .item1 {
