@@ -7,7 +7,9 @@
 
 .textbox {
     font-size: var(--font-size-header);
+    position: relative;
     margin: 20px;
+    margin-bottom: 50px;
     padding: 20px;
     background-color: cornflowerblue;
     width: 460px;
@@ -17,22 +19,46 @@
 
 .insidebox {
     background-color: brown;
+    position: absolute;
     width: 160px;
     height: 100px;
-    margin: 0;
-    border: solid;
-    display: flex;
+    right: 0px;
+    bottom: 0px;
+    border-left: solid;
+    border-top: solid;
 }
 
 .cornerbox {
     background-color: purple;
+    position: fixed;
     width: 50px;
     height: 50px;
-    display: flex;
-
+    right: 0px;
+    top: 0px;
+    border: solid;
 }
 
-.menu1 {
+.yellowbox {
+    background-color: yellow;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: solid;
+}
+
+.blueboxes {
+    background-color: darkcyan;
+    width: 50px;
+    height: 50px;
+    margin: 5rem;
+    border: solid;
+}
+
+.menu {
     font-size: var(--font-size-list);
-    display: list-item;
+    list-style: circle;
+    list-style: inside;
 }
