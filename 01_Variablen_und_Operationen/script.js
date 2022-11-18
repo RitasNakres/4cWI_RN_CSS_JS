@@ -14,12 +14,12 @@ console.log("Das Ergebnis beträgt: " + result);
 
 // (a + b) / c 
 
-result = (a+b)/c
+result = (a + b) / c
 console.log("Das Ergebnis beträgt: " + result);
 
 // c -a + b 
 
-result = c - a +b;
+result = c - a + b;
 console.log("Das Ergebnis beträgt: " + result);
 
 // a + b + c * 3 
@@ -30,7 +30,7 @@ console.log("Das Ergebnis beträgt: " + result);
 // (a + b + c)/4 
 result = (a + b + c) / 4;
 console.log("Das Ergebnis beträgt: " + result);
- 
+
 
 // Ändere die Variablen auf folgende Werte 
 
