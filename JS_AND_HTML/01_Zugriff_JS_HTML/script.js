@@ -1,1 +1,1 @@
-document.getElementById("content").innerHTML= "Tolle Sache!";
+document.getElementById("heading").innerHTML= "Amazing Page";
