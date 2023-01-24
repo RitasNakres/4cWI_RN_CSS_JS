@@ -1,0 +1,30 @@
+html{
+    background-color: coral;
+}
+
+input {
+    padding: 100px;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+}
+
+#output{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    font-weight: 800;
+    font-size: 2em;
+}

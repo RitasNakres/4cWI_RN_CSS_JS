@@ -1,0 +1,23 @@
+html {
+    background-color: burlywood;
+}
+
+input {
+    padding: 10px;
+    margin-left: 10px;
+}
+
+content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#output{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-weight: 800;
+    font-size: 2em;
+}
