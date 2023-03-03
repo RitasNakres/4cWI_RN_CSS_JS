@@ -1,28 +1,28 @@
-input[type="button"][value="Play"] {
-    font-size: 16px;
-    color: salmon;
-  }
-
-
 html {
     background-color: chocolate;
 }
 
-.wrapper {
-    margin: 200px;
-    padding: 200px;
+h1 {
+
+  font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    --font-size-header: 1.5rem;
+    --font-size-list: 1.1rem;
+    --font-color: antiquewhite;
 }
 
-#clickOnButton {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 150px;
-    height: 25px;
+.btn {
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+  text-align: center;
 }
 
-.image-container {
-  margin-left: 50%;
-  margin-top:100px;
+.btn img {
+	display: inline-block;
+  max-width: 100px;
+  height: 100px;
+  vertical-align: middle;
+  margin: 5px;
 }
