@@ -1,28 +1,27 @@
-html {
-    background-color: chocolate;
+#game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-h1 {
-
-  font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    --font-size-header: 1.5rem;
-    --font-size-list: 1.1rem;
-    --font-color: antiquewhite;
+#player-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.btn {
-	background-color: transparent;
-	border: none;
-	padding: 0;
-	cursor: pointer;
-  text-align: center;
+#opponent-container {
+  margin-left: 50px;
 }
 
-.btn img {
-	display: inline-block;
-  max-width: 100px;
-  height: 100px;
-  vertical-align: middle;
-  margin: 5px;
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+img {
+  width: 100px;
 }
