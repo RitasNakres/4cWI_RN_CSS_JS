@@ -1,3 +1,7 @@
+html {
+  background-color: darkgray;
+}
+
 #game-container {
   display: flex;
   justify-content: center;
@@ -5,23 +9,40 @@
   height: 100vh;
 }
 
+.transparent-button {
+  background-color: transparent;
+  border: none;
+}
+
 #player-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
+
 }
 
 #opponent-container {
   margin-left: 50px;
 }
 
-button {
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  padding: 0;
-}
-
 img {
   width: 100px;
+  height: 125px;
+}
+
+
+.result {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  top: 475px;
+  margin-left: 130px;
+  height: 100px;
+  width: 500px;
+  font-size: 20px;
+  font-family: "ORF ON", Arial, Helvetica, sans-serif;
+  background-color: red;
+  color: beige;
 }

@@ -1,61 +1,51 @@
 let opponentSelection;
 let playerSelection;
 let result;
+const opponentOptions = ['Stein',
+    'Papier',
+    'Schere'];
 
-function play(player) {
-  playerSelection = player;
-  opponentSelection = generateOpponentSelection();
-  displayOpponentSelection();
-  determineResult();
-  displayResult();
+function playGame(player) {
+    playerSelection = player;
+    opponentSelection = generateOpponentSelection();
+    displayOpponentSelection();
+    determineResult();
+    displayResult();
 }
 
 function generateOpponentSelection() {
-  const options = ['rock', 'paper', 'scissors'];
-  return options[Math.floor(Math.random() * options.length)];
+    return opponentOptions[Math.floor(Math.random() * opponentOptions.length)];
 }
 
 function displayOpponentSelection() {
-  const opponentBtn = document.getElementById('opponent-btn');
-  opponentBtn.innerHTML = `<img src="${opponentSelection}.png" alt="Opponent">`;
-  opponentBtn.style.animation = 'none';
+    const opponentBtn = document.getElementById('opponent-btn');
+    opponentBtn.innerHTML = `<img src="./images/${opponentSelection}.png" alt="Opponent">`;
 }
 
 function determineResult() {
-  if (playerSelection === 'rock') {
-    if (opponentSelection === 'rock') {
-      result = 'draw';
-    } else if (opponentSelection === 'paper') {
-      result = 'loss';
-    } else if (opponentSelection === 'scissors') {
-      result = 'win';
+    if (playerSelection === 'Stein') {
+        if (opponentSelection === 'Stein') {
+            result = 'draw';
+        } else if (opponentSelection === 'Papier') {
+            result = 'loose';
+        } else if (opponentSelection === 'Schere') {
+            result = 'win';
+        }
+    } else if (playerSelection === 'Papier') {
+        if (opponentSelection === 'Stein') {
+            result = 'win';
+        } else if (opponentSelection === 'Papier') {
+            result = 'draw';
+        } else if (opponentSelection === 'Schere') {
+            result = 'loose';
+        }
+    } else if (playerSelection === 'Schere') {
+        if (opponentSelection === 'Rock') {
+            result = 'loose';
+        } else if (opponentSelection === 'Papier') {
+            result = 'win';
+        } else if (opponentSelection === 'Schere') {
+            result = 'draw';
+        }
     }
-  } else if (playerSelection === 'paper') {
-    if (opponentSelection === 'rock') {
-      result = 'win';
-    } else if (opponentSelection === 'paper') {
-      result = 'draw';
-    } else if (opponentSelection === 'scissors') {
-      result = 'loss';
-    }
-  } else if (playerSelection === 'scissors') {
-    if (opponentSelection === 'rock') {
-      result = 'loss';
-    } else if (opponentSelection === 'paper') {
-      result = 'win';
-    } else if (opponentSelection === 'scissors') {
-      result = 'draw';
-    }
-  }
 }
-
-function displayResult() {
-    if (result === 'win') {
-      alert('You win!');
-    } else if (result === 'loss') {
-        alert('You lose!');
-        } else if (result === 'draw') {
-        alert('Draw!');
-}
-}
-  
