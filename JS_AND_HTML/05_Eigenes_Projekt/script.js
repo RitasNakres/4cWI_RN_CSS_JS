@@ -33,8 +33,6 @@ const play = () => {
     console.log();
     determineResult();
     displayResult();
-
-
 }
 
 function generateOpponentSelection() {
@@ -75,5 +73,5 @@ function determineResult() {
 }
 
 function displayResult() {
-    document.getElementById("gameResult").innerHTML = result
+    setTimeout(() => document.getElementById("gameResult").innerHTML = result, 300)
 }
