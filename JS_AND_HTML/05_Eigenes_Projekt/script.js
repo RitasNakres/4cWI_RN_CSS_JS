@@ -1,16 +1,40 @@
 let opponentSelection;
 let playerSelection;
 let result;
+let isWaiting = false;
+
+
 const opponentOptions = ['Stein',
     'Papier',
     'Schere'];
 
 function playGame(player) {
     playerSelection = player;
+    isWaiting = true;
+    showIsWaiting();
+    setTimeout(play, 2000);
+}
+
+function showIsWaiting() {
+    if (isWaiting) {
+        document.getElementById("opponent-btn").innerHTML = '<img src="./images/Schere.png"/>';
+        setTimeout(() => { document.getElementById("opponent-btn").innerHTML = '<img src="./images/Stein.png"/>'; }, 500);
+        setTimeout(() => { document.getElementById("opponent-btn").innerHTML = '<img src="./images/Papier.png"/>'; }, 1000);
+    } else {
+        document.getElementById("opponent-btn").innerHTML = "";
+    }
+}
+
+const play = () => {
+    isWaiting = false;
+    showIsWaiting();
     opponentSelection = generateOpponentSelection();
     displayOpponentSelection();
+    console.log();
     determineResult();
     displayResult();
+
+
 }
 
 function generateOpponentSelection() {
@@ -48,4 +72,8 @@ function determineResult() {
             result = 'draw';
         }
     }
+}
+
+function displayResult() {
+    document.getElementById("gameResult").innerHTML = result
 }

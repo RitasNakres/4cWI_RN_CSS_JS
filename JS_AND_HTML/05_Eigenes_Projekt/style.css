@@ -6,7 +6,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 300px;
 }
 
 .transparent-button {
@@ -32,7 +32,10 @@ img {
 
 
 .result {
-  position: absolute;
+  position: relative;
+}
+
+.gameResult {
   display: flex;
   justify-content: center;
   align-items: center;
