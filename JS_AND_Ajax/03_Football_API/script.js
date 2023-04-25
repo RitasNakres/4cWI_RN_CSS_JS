@@ -11,9 +11,11 @@ const fillTable = (data) => {
     let html = "";
 
     data.forEach(element => {
-        html += "<div>" + element.team1.teamName + " " + element.matchResults.pointsTeam1 + "</div>" + "<div>" + element.team2.teamName + " " + element.matchResults.pointsTeam2 + "</div>"
+        console.log(element)
+
+            html += `<div class="wrapper"><div class="teamOneInfo">${element.team1.teamName} ${element.matchResults[0].pointsTeam1}</div>
+            : <div class="teamTwoInfo">${element.matchResults[0].pointsTeam2} ${element.team2.teamName}</div></div>`
     });
     document.getElementById("output").innerHTML = html;
 }
-
 loadData();

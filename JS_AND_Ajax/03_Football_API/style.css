@@ -1,5 +1,27 @@
-#output {
+* {
+    font-size: 18px;
+    --font-size-results: 1.5rem;
+}
+
+h1{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    height: 100px;
+}
+.wrapper{
+    width: 100vw;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.teamOneInfo{
+    font-size: var(--font-size-results);
+}
+
+.teamTwoInfo{
+    font-size: var(--font-size-results);
 }
