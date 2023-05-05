@@ -10,12 +10,16 @@ const loadData = () => {
 const fillTable = (data) => {
     let html = "";
 
-    data.forEach(element => {
-        console.log(element)
 
-            html += `<div class="wrapper"><div class="teamOneInfo" img src=${element.team1.teamIconUrl} >${element.team1.teamName} ${element.matchResults[0].pointsTeam1}</div>
-            : <div class="teamTwoInfo" img src=${element.team2.teamIconUrl}>${element.matchResults[0].pointsTeam2} ${element.team2.teamName}</div></div>`
+    data.forEach(element => {
+
+        if (element.matchResults.length > 0) {
+            html += `<div class="wrapper"><div class="teamOneInfo"> <img width="50px" src="${element.team1.teamIconUrl}" alt="iconTeamOne">${element.team1.shortName} ${element.matchResults[0]?.pointsTeam1}</div>
+            : <div class="teamTwoInfo"> ${element.matchResults[0]?.pointsTeam2} ${element.team2.shortName}<img width="50px" src="${element.team2.teamIconUrl}" alt="iconTeamTwo"></div></div>`
+        } else{}
+
     });
+
     document.getElementById("output").innerHTML = html;
 }
 loadData();

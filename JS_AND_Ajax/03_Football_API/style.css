@@ -1,24 +1,44 @@
 * {
-    font-size: 18px;
+    font-size: 24px;
     --font-size-results: 1.5rem;
+    --font-size-title: 5rem;
 }
 
 h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: sticky;
     height: 100px;
+    color: goldenrod;
+    background-color: cornsilk;
+    border: 6px solid burlywood;
+    font-size: var(--font-size-title);
+}
+
+body {
+    background-image: url(./resources/football_field.jpg);
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    justify-content: center;
 }
 
 .wrapper {
-    width: 100vw;
-    height: 45px;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
+    height: 100px;
+    margin: 10px;
     margin-bottom: 10px;
-    cursor: pointer;
+    background: rgba(255, 255, 255, 0.69);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.5px);
+    -webkit-backdrop-filter: blur(10.5px);
+    border: 1px solid rgba(255, 255, 255, 0.38);
 }
 
 .teamOneInfo {
