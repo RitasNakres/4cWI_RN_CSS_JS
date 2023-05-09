@@ -1,18 +1,22 @@
 * {
     font-size: 24px;
+    font-family: "Lucida Console", "Courier New", monospace;
     --font-size-results: 1.5rem;
     --font-size-title: 5rem;
 }
 
-h1 {
+.heading {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: sticky;
+    position: fixed;
+    z-index: 10;
+    width: 580.7px;
+    margin-bottom: 120px;
     height: 100px;
-    color: goldenrod;
-    background-color: cornsilk;
-    border: 6px solid burlywood;
+    color: green;
+    background-color: greenyellow;
+    border: 6px dashed darkolivegreen;
     font-size: var(--font-size-title);
 }
 
@@ -21,7 +25,12 @@ body {
     width: 100vw;
     height: 100vh;
 }
-.container{
+
+#output {
+    margin-top: 120px;
+}
+
+.container {
     display: flex;
     justify-content: center;
 }
@@ -41,15 +50,22 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.38);
 }
 
-.teamOneInfo {
-    font-size: var(--font-size-results);
-}
-
-.teamTwoInfo {
-    font-size: var(--font-size-results);
-}
-
 .teamOneInfo,
 .teamTwoInfo {
-    display: inline-block;
+    font-size: var(--font-size-results);
+    display: flex;
+    align-items: center;
+}
+
+.teamOneIcon,
+.teamTwoIcon {
+    background-color: transparent;
+}
+
+.teamOneIcon {
+    margin-right: 10px;
+}
+
+.teamTwoIcon {
+    margin-left: 10px;
 }
