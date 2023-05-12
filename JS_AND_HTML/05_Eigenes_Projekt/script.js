@@ -12,14 +12,14 @@ function playGame(player) {
     playerSelection = player;
     isWaiting = true;
     showIsWaiting();
-    setTimeout(play, 2000);
+    setTimeout(play, 750);
 }
 
 function showIsWaiting() {
     if (isWaiting) {
         document.getElementById("opponent-btn").innerHTML = '<img src="./images/Schere.png"/>';
-        setTimeout(() => { document.getElementById("opponent-btn").innerHTML = '<img src="./images/Stein.png"/>'; }, 500);
-        setTimeout(() => { document.getElementById("opponent-btn").innerHTML = '<img src="./images/Papier.png"/>'; }, 1000);
+        setTimeout(() => { document.getElementById("opponent-btn").innerHTML = '<img src="./images/Stein.png"/>'; }, 250);
+        setTimeout(() => { document.getElementById("opponent-btn").innerHTML = '<img src="./images/Papier.png"/>'; }, 500);
     } else {
         document.getElementById("opponent-btn").innerHTML = "";
     }

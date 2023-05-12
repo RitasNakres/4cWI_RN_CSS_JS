@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "JS_Basics"
+		},
+		{
+			"path": "01_Basics"
+		},
+		{
+			"path": "JS_AND_HTML"
+		},
+		{
+			"path": "JS_AND_Ajax"
+		},
+		{
+			"path": "REACT"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "JS_AND_Ajax"
+	}
+}
